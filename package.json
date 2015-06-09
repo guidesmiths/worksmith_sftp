@@ -1,0 +1,39 @@
+{
+  "name": "worksmith_sftp",
+  "version": "0.1.0",
+  "description": "SFTP activites for worksmith",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive tests",
+    "prepush": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guidesmiths/worksmith_sftp.git"
+  },
+  "keywords": [
+    "workflow",
+    "worksmith",
+    "sftp",
+    "whoosh"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guidesmiths/worksmith_sftp/issues"
+  },
+  "homepage": "https://github.com/guidesmiths/worksmith_sftp",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "whoosh": "^0.2.3"
+  },
+  "devDependencies": {
+    "async": "^1.2.1",
+    "fs-extra": "^0.18.4",
+    "husky": "^0.8.1",
+    "mocha": "^2.2.5"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "author": "GuideSmiths"
+}
