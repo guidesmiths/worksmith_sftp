@@ -8,6 +8,7 @@ module.exports = function(node) {
         execute.annotations = { inject: ['sftp', 'command', 'arguments']}
 
         function execute(sftp, command, arguments, done) {
+            arguments = arguments.map(context.get)
             debug('Executing %s with [%s]', command, arguments.join(', '))
             sftp = sftp || context.sftp
             sftp[command].apply(sftp, _.compact([].concat(arguments, done)))
