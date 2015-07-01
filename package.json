@@ -1,6 +1,6 @@
 {
   "name": "worksmith_sftp",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "SFTP activites for worksmith",
   "main": "index.js",
   "scripts": {
